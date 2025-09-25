@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚨 Attention aux QR Codes suspects !</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6c9e8898d1.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a18cd1);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #333;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 2.8rem;
+      margin: 0;
+      color: #222;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      font-weight: 500;
+      color: #444;
+    }
+
+    /* Zone logos partenaires */
+    .partners {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .partners img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .partners img:hover {
+      transform: scale(1.1);
+    }
+
+    section {
+      background: #fff;
+      margin: 1.5rem;
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      font-family: 'Fredoka One', cursive;
+      color: #ff4081;
+    }
+
+    .tip {
+      background: #f7f7f7;
+      border-radius: 15px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      transition: 0.3s;
+    }
+
+    .tip:hover {
+      transform: scale(1.02);
+      background: #ffeaf5;
+    }
+
+    .tip i {
+      font-size: 1.8rem;
+      margin-right: 0.75rem;
+      color: #6a11cb;
+    }
+
+    .tip p {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .highlight {
+      font-weight: 700;
+      color: #ff4081;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 2rem 1rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .cta button {
+      background: linear-gradient(135deg, #ff4081, #ff9a76);
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+      animation: pulse 2s infinite;
+    }
+
+    .cta button:hover {
+      transform: scale(1.08);
+      background: linear-gradient(135deg, #e91e63, #ff7043);
+    }
+
+    @keyframes pulse {
+      0% {box-shadow: 0 0 0 0 rgba(255,64,129,0.7);}
+      70% {box-shadow: 0 0 0 20px rgba(255,64,129,0);}
+      100% {box-shadow: 0 0 0 0 rgba(255,64,129,0);}
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 1.5rem;
+      color: #fff;
+    }
+
+    .footer-logos {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-logos img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: #fff;
+      padding: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🚨 Attention aux QR Codes suspects !</h1>
+  </header>
+
+  <section>
+    <h2>🤔 Scanner un QR code, est-ce dangereux?</h2>
+    <p>👉 <span class="highlight">Pas directement !</span> Scanner c’est comme taper une adresse web.  
+    Le risque, c’est <span class="highlight">ce que tu fais après</span> : cliquer sur un lien bizarre, télécharger un fichier chelou, ou mettre tes infos sur un faux site.</p>
+  </section>
+
+  <section>
+    <h2>🛡️ Les réflexes anti-arnaques</h2>
+    <div class="tip"><i class="fas fa-eye"></i><p>🔎 Check l’URL avant d’ouvrir : si c’est chelou ou sans <span class="highlight">https://</span> → 🚫 méfiance.</p></div>
+    <div class="tip"><i class="fas fa-clone"></i><p>👀 Attention aux sites “copiés” : <em>airfrance-login.xyz</em> ≠ <em>airfrance.fr</em></p></div>
+    <div class="tip"><i class="fas fa-search"></i><p>🕵️‍♂️ Copie-colle l’URL sur <strong>Google</strong> ou <strong>VirusTotal</strong> avant de cliquer</p></div>
+    <div class="tip"><i class="fas fa-download"></i><p>⚡ Si un QR code te balance direct un fichier → 🛑 danger assuré</p></div>
+    <div class="tip"><i class="fas fa-users"></i><p>👍 Source officielle (facture, mairie) = OK.  
+    👎 QR code douteux dans la rue/pub random = méfiance !</p></div>
+  </section>
+
+  <div class="cta">
+    <p>🎁 Bravo d’être allé jusqu’ici... On a préparé une petite surprise rien que pour toi 😎</p>
+    <button onclick="window.location.href='https://educational-simulation.vercel.app/'">Découvre ta surprise 🚀</button>
+  </div>
+
+  <footer>
+    <!-- Logos en bas -->
+    <div class="footer-logos">
+      <img src="assets/jci_gpso_logo-removebg-preview.png" alt="Logo JCE">
+      <img src="assets/cashavenir_transparent.png" alt="Logo Cash Avenir">
+      <img src="assets/espace_anne_frank-removebg-preview.png" alt="Logo Espace Anne Frank">
+    </div>
+    © 2025 - Action : Éducation financiére - Atelier - Prévention des arnaques  | JCE x Cash Avenir x Espace Anne Frank
+  </footer>
+
+</body>
+</html>
